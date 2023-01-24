@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;500&display=swap");
+@import url("./bootstrap.min.css");
+
+header {
+    min-height: 795px;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,
+h2,
+h4 {
+    font-family: "Grand Hotel", cursive;
+    color: #ffc200;
+}
+h2 {
+    font-size: 70px;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+section {
+    padding: 140px 0;
+}
+.overlay {
+    display: none;
+}
+.navbar {
+    transition: all 300ms ease-in-out;
+}
+header .sticky-wrapper.is-sticky .navbar {
+    background-color: #1919198e;
+    -webkit-box-shadow: 0px 5px 12px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 12px 7px rgba(0, 0, 0, 0.2);
+}
+header .sticky-wrapper.is-sticky .navbar a {
+    color: #333;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+    color: #ffc200;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc200;
+}
+.navbar-brand img {
+    height: 55px;
+}
+.navbar a {
+    font-size: 18px;
+}
+
+header h1 {
+    padding-top: 150px;
+    font-size: 100px;
+}
+header p {
+    color: #fff;
+    padding-bottom: 30px;
+}
+.order {
+    padding: 9px 25px;
+    background-color: #ffc200;
+    text-decoration: none;
+    color: #333333;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 150ms ease-in-out;
+}
+.order:hover {
+    background-color: #e7b100;
+    color: #333;
+}
+.best-seller-title {
+    text-align: center;
+    text-transform: capitalize;
+    color: #333;
+    padding-bottom: 70px;
+}
+.best-seller-title h2 {
+    color: #333;
+}
+.products img {
+    width: 50%;
+}
+.products {
+    text-align: center;
+}
+.products h4 {
+    font-size: 40px;
+    color: #333;
+}
+.products p {
+    font-size: 16px;
+}
+.menu {
+    background-image: url("../img/sectionBg.png");
+    min-height: 2110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu .menu-content {
+    padding-top: 120px;
+    color: #fff;
+}
+.menu .best-seller-title {
+    padding-top: 100px;
+    color: #fff;
+}
+.menu .best-seller-title h2 {
+    color: #ffc200;
+}
+.circle-card {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle-card h2 {
+    margin: 0;
+    line-height: 1;
+}
+.circle-card p {
+    color: #fff;
+    font-weight: 600;
+}
+.menu-text-bottom {
+    padding-top: 200px;
+    color: #fff;
+}
+.menu-img-bottom {
+    padding-top: 100px;
+}
+.call-action {
+    text-align: center;
+    background-image: url("../img/ctaBg_02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input[type="text"] {
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    background-color: #fafafa;
+    color: #666;
+    font-family: "Montserrat", sans-serif;
+    height: 54px;
+    width: 35%;
+    padding: 12px;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="button"] {
+    background-color: #ffc200;
+    padding: 13px 25px;
+    border: none;
+    font-weight: 600;
+    width: 150px;
+}
+footer {
+    background-color: #333;
+    padding: 100px 0;
+    color: #fff;
+}
+.footer-flex {
+    display: flex;
+    justify-content: center;
+}
+footer img {
+    height: 55px;
+}
+.footer-logo {
+    width: 30%;
+    margin-right: 40px;
+}
+.footer-logo p {
+    font-size: 14px;
+}
+.footer-about,
+.footer-services,
+.footer-other {
+    margin: 0 30px;
+}
+
+.footer-about ul,
+.footer-services ul,
+.footer-other ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-about li a,
+.footer-services li a,
+.footer-other li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-about li a:hover,
+.footer-services li a:hover,
+.footer-other li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        overflow-x: hidden;
+    }
+    header {
+        position: relative;
+        z-index: 0;
+    }
+    header::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.568);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .menu .col-md-3 {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+    .circle-card {
+        height: 100px;
+        width: 100px;
+    }
+    .circle-card h2 {
+        font-size: 30px;
+    }
+    .circle-card p {
+        font-size: 14px;
+    }
+    .best-seller {
+        padding-bottom: 0;
+    }
+    .menu {
+        padding-top: 200;
+    }
+
+    .menu-content,
+    .menu-text-bottom {
+        text-align: center;
+    }
+    .menu-img-top img,
+    .menu-img-bottom img {
+        display: none;
+    }
+    .footer-logo {
+        width: 100%;
+        padding: 0 10%;
+    }
+    .footer-about,
+    .footer-other,
+    .footer-services {
+        width: 100%;
+    }
+    .footer-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type="text"] {
+        width: 50%;
+        padding: 12px;
+    }
+    .footer-logo {
+        padding-left: 20px;
+    }
+}

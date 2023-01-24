@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="icon" href="src/img/favicon-logo.png" type="image/gif" />
+        <link rel="stylesheet" href="src/css/services.css" />
+        <link rel="stylesheet" href="src/css/contact.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="src/img/logo.png" alt="" /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contact" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1>Contact</h1>
+            </div>
+        </header>
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form">
+                            <h2>WE'RE READY, LET'S TALK.</h2>
+                            <form action="">
+                                <input type="text" placeholder="Your Name" id="name" />
+                                <input type="email" placeholder="Your Email" id="email" />
+                                <textarea name="message" placeholder="Message" id="message" cols="30" rows="5"></textarea>
+                                <button class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="contact-in">
+                            <h2>CONTACT INFO</h2>
+                            <p>
+                                <span class="contact-info">Address​</span>
+                                123 Fifth Avenue, NY 10160, New York, USA
+                            </p>
+                            <p>
+                                <span class="contact-info">Email Us</span>
+                                <a href="mailto:contact@example.com">contact@example.com</a>
+                            </p>
+                            <p>
+                                <span class="contact-info">Call Us</span>
+                                <a href="tel:800123456">800-123-456</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Upashahar, Sylhet 3100</p>
+            <p class="footer-text">
+                Phone:
+                <a href="tel:800123456">800-123-456</a>
+                | Email:
+                <a href="mailto:contact@example.com">contact@example.com</a>
+            </p>
+            <p class="copyright">
+                Copyright © 2021
+                <span class="yellow">Sampan Restaurant</span>
+            </p>
+        </footer>
+        <script src="./src/js/bootstrap.min.js"></script>
+        <script src=" https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js "></script>
+        <script src="src/js/jquery.sticky.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#navbar").sticky({ topSpacing: 0 });
+            });
+
+            $(".navbar .nav-link").on("click", function () {
+                $(".navbar").find(".active").removeClass("active");
+                $(this).addClass("active");
+            });
+        </script>
+    </body>
+</html>
